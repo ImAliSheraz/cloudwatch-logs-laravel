@@ -64,3 +64,34 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Setup
+
+And set the `LOG_CHANNEL` in your environment variable to `cloudwatch`. Set following keys in `.env` file.
+
+```
+CLOUDWATCH_LOG_NAME=
+CLOUDWATCH_LOG_REGION=
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+CLOUDWATCH_LOG_STREAM_NAME=
+CLOUDWATCH_LOG_RETENTION_DAYS=14
+CLOUDWATCH_LOG_GROUP_NAME=laravel
+CLOUDWATCH_LOG_VERSION=latest
+DISABLE_CLOUDWATCH_LOG=false
+```
+
+## Example
+Following is example log logs messages in cloudwatch.
+
+```
+Log::info('This is an info message.');
+
+// or
+
+Log::channel('cloudwatch')->info('This is an info message.');
+```
+
+## Show Your Support
+🚀 [Connect me on LinkedIn](https://www.linkedin.com/in/imalisheraz/) - Your support means a lot!  
+⭐ Don't forget to star the repo, it's FREE! 😉
