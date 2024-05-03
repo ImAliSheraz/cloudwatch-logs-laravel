@@ -67,7 +67,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ## Setup
 
-And set the `LOG_CHANNEL` in your environment variable to `cloudwatch`. Set following keys in `.env` file.
+Set the `LOG_CHANNEL` in your environment variable to `cloudwatch`. Set the following keys in the `.env` file.
 
 ```
 CLOUDWATCH_LOG_NAME=
@@ -82,7 +82,7 @@ DISABLE_CLOUDWATCH_LOG=false
 ```
 
 ## Example
-Following is example log logs messages in cloudwatch.
+Following is an example of log messages in Cloudwatch.
 
 ```
 Log::info('This is an info message.');
